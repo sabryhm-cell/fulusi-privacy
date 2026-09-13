@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>سياسة الخصوصية — فلوسي</title>
+<meta name="description" content="سياسة خصوصية تطبيق فلوسي: كل بياناتك المالية بتتخزن على موبايلك، مفيش سيرفر ومفيش تتبع.">
+<style>
+  :root {
+    --bg: #f3f6f5;
+    --card: #ffffff;
+    --ink: #16211d;
+    --muted: #63706b;
+    --border: #e2e8e5;
+    --brand: #0b6e4f;
+    --warn: #e0a729;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #11151a;
+      --card: #1a2027;
+      --ink: #e8eeeb;
+      --muted: #9aa8a3;
+      --border: #2a333b;
+      --brand: #17a673;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: "Segoe UI", Tahoma, "Noto Naskh Arabic", Arial, sans-serif;
+    line-height: 1.85;
+    font-size: 16px;
+  }
+  .wrap { max-width: 760px; margin: 0 auto; padding: 24px 18px 64px; }
+  header {
+    background: linear-gradient(135deg, #0b6e4f, #15c687);
+    color: #fff;
+    padding: 36px 18px;
+    text-align: center;
+  }
+  header h1 { margin: 0 0 6px; font-size: 1.6rem; }
+  header p { margin: 0; opacity: .9; font-size: .9rem; }
+  .card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 20px 22px;
+    margin: 18px 0;
+  }
+  .lead {
+    border-right: 4px solid var(--brand);
+    background: color-mix(in srgb, var(--brand) 7%, var(--card));
+  }
+  h2 { font-size: 1.15rem; margin: 28px 0 10px; }
+  h3 { font-size: 1rem; margin: 22px 0 6px; color: var(--brand); }
+  p { margin: 10px 0; }
+  code {
+    background: color-mix(in srgb, var(--brand) 10%, transparent);
+    padding: 1px 6px;
+    border-radius: 5px;
+    font-size: .85em;
+    direction: ltr;
+    display: inline-block;
+  }
+  ul { padding-right: 22px; margin: 10px 0; }
+  li { margin: 6px 0; }
+  .muted { color: var(--muted); font-size: .9rem; }
+  hr { border: none; border-top: 1px solid var(--border); margin: 26px 0; }
+  a { color: var(--brand); }
+  footer { text-align: center; color: var(--muted); font-size: .85rem; padding: 20px; }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>سياسة الخصوصية</h1>
+  <p>تطبيق فلوسي · آخر تحديث 13 سبتمبر 2026</p>
+</header>
+
+<div class="wrap">
+
+  <div class="card lead">
+    <h2 style="margin-top:0">الخلاصة في سطرين</h2>
+    <p>كل بياناتك المالية بتتخزن <strong>على موبايلك أنت</strong>. مفيش سيرفر
+    لفلوسي، ومفيش حساب مستخدم، ومحدش — ولا حتى مطوّر التطبيق — يقدر يشوف فلوسك.</p>
+  </div>
+
+  <p>فلوسي تطبيق لمتابعة المصروفات، بيقرا رسائل البنوك على موبايلك ويحوّلها
+  لسجل مصاريف مفهوم.</p>
+
+  <hr>
+
+  <h2>البيانات اللي التطبيق بيوصل لها</h2>
+
+  <h3>رسائل SMS <code>READ_SMS</code> <code>RECEIVE_SMS</code></h3>
+  <p><strong>ليه:</strong> دي وظيفة التطبيق الأساسية. بيقرا رسائل البنوك
+  والمحافظ الإلكترونية عشان يطلّع منها المبلغ والتاريخ والجهة، ويحطهم في سجل
+  مصاريفك.</p>
+  <p><strong>فين بتروح:</strong> <strong>مش بتخرج من الموبايل أبدًا.</strong>
+  التحليل كله بيحصل محليًا، والنتيجة بتتخزن في قاعدة بيانات على جهازك.</p>
+  <p><strong>رسائلك الشخصية:</strong> التطبيق بيقرا صندوق الرسائل كله عشان
+  يلاقي رسائل البنوك، بس اللي بيتخزن هو <strong>بس</strong> الرسائل اللي فيها
+  معاملة مالية. أي رسالة تانية بيتم تجاهلها ومش بتتسجل في أي مكان.</p>
+
+  <h3>إرسال رسائل <code>SEND_SMS</code></h3>
+  <p><strong>ليه:</strong> ميزة اختيارية اسمها «تحويل الرسائل» — بتبعت ملخّص
+  التحويلات اللي بتوصلك لأرقام إنت بتحطها بنفسك (مثلاً: البياع في محلك، عشان
+  يعرف إن العميل حوّل).</p>
+  <p><strong>مقفولة افتراضيًا.</strong> الإذن مش بيتطلب منك غير لما تفتح
+  الميزة دي بنفسك.</p>
+  <p><strong>اللي بيتبعت:</strong> ملخّص بس (المبلغ، الاسم، الوقت، اسم البنك).
+  <strong>رسالة البنك الأصلية مش بتتبعت أبدًا</strong>، لأنها غالبًا بتحتوي على
+  رصيد حسابك.</p>
+
+  <h3>جهات الاتصال <code>READ_CONTACTS</code></h3>
+  <p><strong>ليه:</strong> عشان يحوّل الأرقام في رسائل التحويلات لأسماء تعرفها،
+  وعشان تختار اسم من فهرسك بدل ما تكتبه.</p>
+  <p><strong>فين بتروح:</strong> بتتقري على الموبايل وبس. مفيش أي جهة اتصال
+  بتترفع لأي مكان.</p>
+
+  <h3>الموقع <code>ACCESS_FINE_LOCATION</code> <code>ACCESS_COARSE_LOCATION</code></h3>
+  <p><strong>ليه:</strong> ميزة اختيارية اسمها «أماكني» — لما تسجّل مصروف كاش،
+  تقدر تحفظ مكانك باسم تختاره («بنزينة التعاون»)، وأول ما ترجع لنفس المكان
+  التطبيق يقترحه.</p>
+  <p><strong>بيتاخد وقت إمتى:</strong> <strong>بس لما تدوس زرار «أنا فين
+  دلوقتي؟»</strong>. مفيش تتبع في الخلفية — التطبيق <strong>مش</strong> بيطلب
+  إذن <code>ACCESS_BACKGROUND_LOCATION</code> أصلاً.</p>
+  <p><strong>فين بتروح:</strong> الإحداثيات بتتخزن على موبايلك وبس. مفيش خدمة
+  خرايط ولا أي سيرفر بيشوفها.</p>
+
+  <h3>الميكروفون <code>RECORD_AUDIO</code></h3>
+  <p><strong>ليه:</strong> عشان تسجّل وصف المصروف بصوتك بدل ما تكتبه.
+  بيشتغل بس لما تدوس زرار الميكروفون، والتحويل من صوت لنص بيتعمل بخدمة أندرويد
+  المدمجة في موبايلك.</p>
+
+  <h3>الإشعارات <code>POST_NOTIFICATIONS</code></h3>
+  <p>عشان ينبهك بمعاملة جديدة، أو قسط قرب ميعاده، أو فاتورة مستحقة.</p>
+
+  <h3>البصمة والوجه <code>USE_BIOMETRIC</code></h3>
+  <p>عشان تقفل التطبيق. التحقق بيتم بنظام أندرويد نفسه — التطبيق
+  <strong>مش</strong> بيشوف ولا بيخزن بصمتك.</p>
+
+  <h3>الإنترنت <code>INTERNET</code></h3>
+  <p>التطبيق بيشتغل من غير نت. الاتصال بيحصل في حالتين بس:</p>
+  <ul>
+    <li><strong>أسعار العملات</strong> — لتحويل المعاملات بالدولار أو اليورو للجنيه.</li>
+    <li><strong>ميزة «اسأل فلوسك»</strong> (اختيارية) — موضحة تحت.</li>
+  </ul>
+
+  <hr>
+
+  <div class="card">
+    <h2 style="margin-top:0">«اسأل فلوسك» — الحالة الوحيدة اللي بيخرج فيها بيانات</h2>
+    <p>الميزة دي <strong>اختيارية</strong> ومحتاجة مفتاح API تحطه بنفسك. لما
+    تسألها سؤال، بيتبعت <strong>ملخّص أرقامك</strong> لخدمة Anthropic عشان
+    تولّد الإجابة.</p>
+
+    <p><strong>اللي بيتبعت:</strong> إجماليات شهرية (دخل، صرف)، مجاميع لكل
+    فئة، وأسماء أكبر الجهات اللي صرفت لها.</p>
+
+    <p><strong>اللي مش بيتبعت أبدًا:</strong></p>
+    <ul>
+      <li>نص رسائل البنك</li>
+      <li>أرقام حساباتك أو أرقام الكروت</li>
+      <li>رصيد أي حساب</li>
+      <li>أرقام تليفوناتك أو جهات اتصالك</li>
+      <li>موقعك</li>
+    </ul>
+
+    <p>يعني اللي بيخرج شبه: «شهر سبتمبر: دخل ٤٠٠٠٠، صرف ٣٢٠٠٠، مطاعم ٣٠٠٠».</p>
+
+    <p class="muted">بيانات الميزة دي بتتعامل حسب سياسة خصوصية Anthropic. لو
+    مش عايز أي حاجة تخرج من موبايلك، سيب الميزة دي مقفولة — باقي التطبيق
+    بيشتغل كامل من غيرها.</p>
+  </div>
+
+  <h2>النسخ الاحتياطي</h2>
+  <p>التطبيق بيعمل نسخة احتياطية من قاعدة بياناته على تخزين موبايلك. النسخة دي
+  <strong>مش بتترفع لأي سحابة</strong>. لو نقلتها لحتة تانية بنفسك، بقت
+  مسؤوليتك.</p>
+
+  <h2>مفيش تتبّع</h2>
+  <p>فلوسي مفيهوش:</p>
+  <ul>
+    <li>أي تحليلات استخدام أو أدوات تتبع</li>
+    <li>أي إعلانات</li>
+    <li>أي حساب مستخدم أو تسجيل دخول</li>
+    <li>أي مشاركة أو بيع لبياناتك — لأي جهة، بأي شكل</li>
+  </ul>
+
+  <h2>حذف بياناتك</h2>
+  <p>امسح التطبيق من موبايلك. كل بياناتك بتتمسح معاه، لأنها كلها كانت على
+  جهازك من الأساس. مفيش نسخة عند حد تاني تحتاج تطلب مسحها.</p>
+  <p>جوّه التطبيق كمان تقدر تمسح أي معاملة، أو أي مكان محفوظ، أو أي رقم مسجّل
+  في تحويل الرسائل.</p>
+
+  <h2>الأطفال</h2>
+  <p>التطبيق مش موجّه لمن هم أقل من ١٣ سنة، ومش بيجمع بيانات منهم عن قصد.</p>
+
+  <h2>تغييرات على السياسة</h2>
+  <p>أي تعديل هيتنشر على نفس الصفحة دي مع تحديث تاريخ «آخر تحديث» فوق.</p>
+
+  <h2>للتواصل</h2>
+  <p><a href="mailto:sabryhm@gmail.com">sabryhm@gmail.com</a></p>
+
+</div>
+
+<footer>فلوسي — تطبيق متابعة مصروفات يشتغل على موبايلك</footer>
+
+</body>
+</html>
